@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.welcome {
+  min-height: 934px;
+  background: #eae9e9;
+}
+
+.container {
+  max-width: 1137px;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+
+.welcome__container {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.welcome__info__model {
+  color: #161515;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 186%;
+  margin-bottom: 53px;
+  display: inline-block;
+}
+
+.welcome__info__title {
+  color: #272727;
+  font-size: 250px;
+  font-weight: 300;
+}
+
+.welcome__info__desc {
+  color: #161515;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 155%;
+  margin-bottom: 28px;
+  max-width: 575px;
+  margin-bottom: 61px;
+}
+
+.welcome_bar {
+  display: inline-flex;
+}
+
+.welcome_bar__link {
+  display: inline-block;
+  text-align: center;
+  background: #161515;
+  padding: 26px;
+  min-width: 278px;
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+
+  max-height: 82px;
+}
+
+.welcome_bar__price {
+  background: #fff;
+  box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 0.25);
+  padding: 26px;
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+
+  max-height: 82px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  color: #272727;
+  text-align: center;
+  font-family: League Spartan;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 186%;
+}
+
+.welcome__img {
+  max-width: 414px;
+  height: auto;
+}
+
+.welcome__img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.info {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.info__subtitle {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 186%;
+}
+
+.info__title {
+  color: #000;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 112.5%;
+  margin-bottom: 84px;
+}
+
+.watch {
+  max-width: 532px;
+  margin-inline: auto;
+  margin-bottom: 85px;
+}
+
+.watch-img {
+  max-width: 417px;
+  background: #eae9e9;
+  padding: 65px 105px;
+  margin-bottom: 67px;
+  margin-inline: auto;
+}
+
+.watch__title {
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.watch__desc {
+  color: #161515;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 155%;
+}
+
+.san22-img {
+  padding: 110px 65px;
+}
+
+.sw12-img {
+  max-width: 496px;
+}
+
+.product {
+  margin-bottom: 142px;
+}
+
+.product__title {
+  color: #161515;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 186%;
+  text-transform: capitalize;
+  margin-bottom: 58px;
+  display: inline-block;
+  position: relative;
+}
+
+.product__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100% - 72px);
+  height: 1px;
+  background: #707070;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prosuct__desc {
+  max-width: 521px;
+  margin-inline: auto;
+  color: #161515;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 170%;
+}
+
+.prosuct__desc a {
+  color: #bb8b5d;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 170%;
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .welcome {
+    padding: 50px 0;
+    min-height: auto;
+  }
+  .welcome__container {
+    flex-direction: column-reverse;
+  }
+
+  .welcome__info__title {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .welcome__info__desc,
+  .watch__desc {
+    font-size: 24px;
+  }
+
+  .watch-img {
+    padding: 65px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .welcome_bar {
+    flex-direction: column;
+    display: flex;
+  }
+}
